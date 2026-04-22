@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Care — Elyria City Information Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/junicode@5.0.12/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="elyria-portal.html" class="site-header__wordmark" aria-label="Elyria home">
+      <span class="site-header__city">Elyria</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="elyria-portal.html" class="site-nav__item">Today</a>
+      <a href="districts.html" class="site-nav__item">Districts</a>
+      <a href="nourishment.html" class="site-nav__item">Nourishment</a>
+      <a href="care.html" class="site-nav__item site-nav__item--active">Care</a>
+      <a href="events.html" class="site-nav__item">Events</a>
+      <a href="community.html" class="site-nav__item">Community</a>
+    </nav>
+    <div class="site-header__right">
+      <time class="header-clock" id="header-clock" datetime="" aria-live="polite">--:--:--</time>
+      <span class="header-date" id="header-date">--</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page page-hero page-hero--split" aria-label="Care overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Public care network</p>
+        <h1 class="hero-title">Care</h1>
+        <p class="hero-subhead">Six centers across the city, open at all hours. No appointment, no cost.</p>
+        <p class="hero-body">All centers are fully staffed around the clock. Walk-ins are received in order of urgency. Response time is measured in minutes. The network does not scale back after dark.</p>
+      </div>
+      <div class="hero-media">
+        <img src="images/cosmos_1307433202.jpeg" alt="A calm restorative interior with soft light and quiet architectural rhythm." />
+        <div class="hero-note">
+          <strong>Network status</strong>
+          <p>All centers fully staffed. Walk-ins remain welcome at any hour.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="Care metrics">
+      <div class="home-stat-band home-stat-band--care">
+        <div class="home-stat-band__media" aria-hidden="true">
+          <img src="images/0570a9638c8cd5c01ffe029d8b4a7bf7.jpg" alt="" />
+        </div>
+        <div class="home-stat-band__overlay">
+          <div class="home-stat-band__content page">
+            <div class="stat-panel">
+              <div class="stat-hero">
+                <span class="stat-hero__label">Open centers</span>
+                <span class="stat-hero__value">6</span>
+                <p class="stat-hero__copy">One center in each district, plus the main facility at the Civic Heart. All open, all fully staffed.</p>
+              </div>
+              <div class="stat-stack">
+                <div class="soft-panel soft-panel--green">
+                  <span class="stat-item__label">Walk-in availability</span>
+                  <span class="stat-item__value">24/7</span>
+                </div>
+                <div class="soft-panel">
+                  <span class="stat-item__label">Average transit to care</span>
+                  <span class="stat-item__value">9 min</span>
+                </div>
+                <div class="soft-panel soft-panel--pink">
+                  <span class="stat-item__label">Resident cost</span>
+                  <span class="stat-item__value">None</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="Care centers">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Care centers</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="service-card">
+          <p class="eyebrow">District core</p>
+          <h3 class="service-card__title">Civic Heart Care Center</h3>
+          <p class="service-card__copy">The city's central care site for urgent needs, coordination, and round-the-clock intake.</p>
+          <p class="list-item__meta">Always open</p>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">Western Gardens</p>
+          <h3 class="service-card__title">Western Gardens Care House</h3>
+          <p class="service-card__copy">A slower, quieter care environment connected to the district's restorative gardens and commons rooms.</p>
+          <p class="list-item__meta">Open and receiving</p>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">River Quarter</p>
+          <h3 class="service-card__title">River Quarter Clinic</h3>
+          <p class="service-card__copy">Close to the Community Kitchen and river route, with strong coordination around nourishment and recovery.</p>
+          <p class="list-item__meta">Standard access</p>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">Learning Quarter</p>
+          <h3 class="service-card__title">Health Commons</h3>
+          <p class="service-card__copy">A center oriented toward counseling, preventative care, and the daily health needs of students and researchers.</p>
+          <p class="list-item__meta">Open session model</p>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">Northern Slope</p>
+          <h3 class="service-card__title">Care Station</h3>
+          <p class="service-card__copy">A highly used neighborhood site serving Elyria's largest residential district with practical and immediate care access.</p>
+          <p class="list-item__meta">High daytime volume</p>
+        </article>
+        <article class="service-card">
+          <p class="eyebrow">High &amp; Garden districts</p>
+          <h3 class="service-card__title">Wellness House</h3>
+          <p class="service-card__copy">Shared between two districts, balancing quieter therapeutic care with strong botanical and environmental support.</p>
+          <p class="list-item__meta">Joint district service</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="Care services">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Available at every center</h2>
+        </div>
+      </div>
+      <div class="care-services-band">
+        <div class="care-services-band__media" aria-hidden="true">
+          <img src="images/20260414_1816_Image Generation_remix_01kp711k2yebdvqzxe00gyxjbf.png" alt="A bright civic interior that suggests calm, support, and shared care." />
+        </div>
+        <div class="care-services-band__overlay">
+          <div class="info-grid care-services-band__grid">
+            <article class="soft-panel">
+              <p class="eyebrow">Immediate response</p>
+              <h3 class="card-title">Immediate care and triage</h3>
+              <p class="card-copy">No appointment needed. Residents are seen in order of urgency.</p>
+            </article>
+            <article class="soft-panel">
+              <p class="eyebrow">Recovery spaces</p>
+              <h3 class="card-title">Rest rooms and overnight observation</h3>
+              <p class="card-copy">Recovery spaces are available at all centers. Care continues past first treatment.</p>
+            </article>
+            <article class="soft-panel">
+              <p class="eyebrow">Ongoing support</p>
+              <h3 class="card-title">Counseling and wellbeing support</h3>
+              <p class="card-copy">Mental and emotional care at every center, same access as any other service.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="info-bar" role="contentinfo" aria-label="Information Network updates">
+    <div class="info-bar__label" aria-hidden="true">
+      <span class="info-bar__label-dot"></span>
+      <span class="info-bar__label-text">Information Network</span>
+    </div>
+    <div class="info-bar__track" aria-hidden="true">
+      <div class="info-bar__scroll">
+        <span class="info-item">All care centers operating at full capacity with no resident costs.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Western Gardens Care House remains the quietest intake site this evening.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Overnight observation rooms available across the full network.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">All care centers operating at full capacity with no resident costs.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Western Gardens Care House remains the quietest intake site this evening.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Overnight observation rooms available across the full network.</span>
+        <span class="info-item__sep">◆</span>
+      </div>
+    </div>
+    <div class="info-bar__clock">
+      <span class="info-bar__clock-text" id="ticker-clock">--:--:--</span>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>

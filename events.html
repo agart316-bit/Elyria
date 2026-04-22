@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Elyria City Information Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/junicode@5.0.12/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="elyria-portal.html" class="site-header__wordmark" aria-label="Elyria home">
+      <span class="site-header__city">Elyria</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="elyria-portal.html" class="site-nav__item">Today</a>
+      <a href="districts.html" class="site-nav__item">Districts</a>
+      <a href="nourishment.html" class="site-nav__item">Nourishment</a>
+      <a href="care.html" class="site-nav__item">Care</a>
+      <a href="events.html" class="site-nav__item site-nav__item--active">Events</a>
+      <a href="community.html" class="site-nav__item">Community</a>
+    </nav>
+    <div class="site-header__right">
+      <time class="header-clock" id="header-clock" datetime="" aria-live="polite">--:--:--</time>
+      <span class="header-date" id="header-date">--</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page page-hero page-hero--split" aria-label="Events overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Culture and commons</p>
+        <h1 class="hero-title">Events</h1>
+        <p class="hero-subhead">Music, readings, harvest tables, open sessions, and district walks throughout the year.</p>
+        <p class="hero-body">Most events are open entry — no registration unless noted. The full year is listed below. The calendar updates when events are added or changed.</p>
+      </div>
+      <div class="hero-media">
+        <img src="images/b9961a2d096a39f9cd176f485f9864e0.jpg" alt="A luminous civic setting prepared for gatherings, music, and public events." />
+        <div class="hero-note">
+          <strong>Tonight</strong>
+          <p>Evening Music gathers in the Civic Heart shortly after sunset.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="Featured event">
+      <article class="story-card story-card--feature">
+        <div class="story-card__body">
+          <p class="kicker">Featured gathering</p>
+          <h2 class="card-title">Autumn Harvest Table</h2>
+          <p class="card-subtitle">Saturday · District Three · Community Kitchen</p>
+          <p class="card-copy">The Autumn Harvest Table is one of Elyria's most anticipated seasonal gatherings: an extended public meal set across open spaces in the River Quarter, prepared by the Community Kitchen and sustained through the whole day.</p>
+          <p class="card-copy">Residents who want to host a Shared Table can request additional provisioning through the system and notify their immediate community through the Information Network. Tables gather between six and twenty people, lasting two to four hours — among the most consistently valued experiences in Elyrian social life.</p>
+        </div>
+        <div class="story-card__media">
+          <img src="images/f0d98ae222c7ab8a07299256bbe11383.jpg" alt="A warm communal setting suited to long seasonal tables and shared gathering." />
+        </div>
+      </article>
+    </section>
+
+    <section class="events-calendar-band" aria-label="Elyria annual calendar">
+      <div class="events-calendar-band__media" aria-hidden="true">
+        <img src="images/2dfb767bf92c132b2bc8df33dc023f52.jpg" alt="" data-calendar-image />
+      </div>
+      <div class="events-calendar-band__overlay">
+        <div class="page events-calendar-band__content">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">2026 calendar</h2>
+            </div>
+          </div>
+          <div class="year-calendar" data-year-calendar data-calendar-year="2026" data-calendar-today="2026-04-22"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="info-bar" role="contentinfo" aria-label="Information Network updates">
+    <div class="info-bar__label" aria-hidden="true">
+      <span class="info-bar__label-dot"></span>
+      <span class="info-bar__label-text">Information Network</span>
+    </div>
+    <div class="info-bar__track" aria-hidden="true">
+      <div class="info-bar__scroll">
+        <span class="info-item">Evening Music begins after sunset in the Civic Heart.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Harvest Table staging continues in District Three throughout tomorrow morning.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Learning Commons Open Session remains open to all residents this week.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Evening Music begins after sunset in the Civic Heart.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Harvest Table staging continues in District Three throughout tomorrow morning.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Learning Commons Open Session remains open to all residents this week.</span>
+        <span class="info-item__sep">◆</span>
+      </div>
+    </div>
+    <div class="info-bar__clock">
+      <span class="info-bar__clock-text" id="ticker-clock">--:--:--</span>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>

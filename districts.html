@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Districts — Elyria City Information Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/junicode@5.0.12/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="elyria-portal.html" class="site-header__wordmark" aria-label="Elyria home">
+      <span class="site-header__city">Elyria</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="elyria-portal.html" class="site-nav__item">Today</a>
+      <a href="districts.html" class="site-nav__item site-nav__item--active">Districts</a>
+      <a href="nourishment.html" class="site-nav__item">Nourishment</a>
+      <a href="care.html" class="site-nav__item">Care</a>
+      <a href="events.html" class="site-nav__item">Events</a>
+      <a href="community.html" class="site-nav__item">Community</a>
+    </nav>
+    <div class="site-header__right">
+      <time class="header-clock" id="header-clock" datetime="" aria-live="polite">--:--:--</time>
+      <span class="header-date" id="header-date">--</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page page-hero page-hero--split" aria-label="District overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Civic geography</p>
+        <h1 class="hero-title">Districts</h1>
+        <p class="hero-subhead">Seven districts radiate from the Civic Heart, each with its own character and pace.</p>
+        <p class="hero-body">The districts are not separate. They fold into one another at their edges, so that the transition from one neighborhood to the next is felt as a gradual modulation rather than a border. Each contains everything a resident needs within walking distance.</p>
+      </div>
+      <div class="hero-media">
+        <img src="images/1c91abc5dc73bbf4441292ebbe6183c5.jpg" alt="A district-scale view with layered civic structures and planted routes." />
+        <div class="hero-note hero-note--light">
+          <strong>District note</strong>
+          <p>Paths between districts are porous. Transit, assemblies, and shared care mean that most residents regularly move beyond the place they sleep.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="District map and overview">
+      <div class="split-grid">
+        <div class="soft-panel soft-panel--home-spacing">
+          <p class="eyebrow">The shape of the city</p>
+          <h3 class="section-title">Starting from the Civic Heart</h3>
+          <p class="prose">District One houses the Learning Commons. District Three centers on nourishment and the river. District Five is the largest residential area. District Seven sits on the high terraces with views over the whole city.</p>
+          <p class="prose">Transit, assemblies, and shared care connect all seven districts. Most residents move across district lines daily. The map below shows proximity, not division.</p>
+        </div>
+        <div class="district-map-wrap">
+          <div class="district-map-placeholder">
+            <img src="images/cosmos_298299154.jpeg" alt="A high district overview suggesting Elyria's connected civic layout." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section district-section district-section--fullbleed" aria-label="All districts">
+      <div class="section-header">
+        <div>
+          <h3 class="section-title">All districts</h3>
+        </div>
+      </div>
+
+      <div class="district-grid district-grid--stacked">
+        <article class="district-card">
+          <p class="eyebrow">District One</p>
+          <h3 class="district-card__title">The Learning Quarter</h3>
+          <p class="district-card__copy">Libraries, research rooms, open sessions, and slow public study gather here. It is the most outward-facing district in matters of learning and record.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">3</span><span class="district-card__stat-label">Commons halls</span></div>
+            <div><span class="district-card__stat-value">Late</span><span class="district-card__stat-label">Hours</span></div>
+            <div><span class="district-card__stat-value">Open</span><span class="district-card__stat-label">Sessions</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Two</p>
+          <h3 class="district-card__title">The Eastern Reach</h3>
+          <p class="district-card__copy">The market-facing district of exchange, craft, and conversation. Movement here is energetic without losing the city's slower civility.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">Daily</span><span class="district-card__stat-label">Markets</span></div>
+            <div><span class="district-card__stat-value">First</span><span class="district-card__stat-label">Assembly Monday</span></div>
+            <div><span class="district-card__stat-value">High</span><span class="district-card__stat-label">Footfall</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Three</p>
+          <h3 class="district-card__title">The River Quarter</h3>
+          <p class="district-card__copy">Nourishment, river corridor stewardship, and public gathering overlap here. The district is known for harvest tables and evening movement along the water.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">River</span><span class="district-card__stat-label">Access</span></div>
+            <div><span class="district-card__stat-value">Kitchen</span><span class="district-card__stat-label">Center</span></div>
+            <div><span class="district-card__stat-value">Wide</span><span class="district-card__stat-label">Commons</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Four</p>
+          <h3 class="district-card__title">The Western Gardens</h3>
+          <p class="district-card__copy">The quietest district in cadence, shaped by care houses, reflective garden rooms, and slower assemblies attentive to wellbeing and rest.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">Quiet</span><span class="district-card__stat-label">Pace</span></div>
+            <div><span class="district-card__stat-value">Care</span><span class="district-card__stat-label">Anchor</span></div>
+            <div><span class="district-card__stat-value">Fourth</span><span class="district-card__stat-label">Friday assembly</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Five</p>
+          <h3 class="district-card__title">The Northern Slope</h3>
+          <p class="district-card__copy">The largest residential district, animated by terraced housing, cultivation routines, and broad community participation in seasonal work.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">Largest</span><span class="district-card__stat-label">Residential share</span></div>
+            <div><span class="district-card__stat-value">Lively</span><span class="district-card__stat-label">Assemblies</span></div>
+            <div><span class="district-card__stat-value">Peak</span><span class="district-card__stat-label">Autumn color</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Six</p>
+          <h3 class="district-card__title">The Garden District</h3>
+          <p class="district-card__copy">Botanical corridors, greenhouse rooms, and stewarded greenway routes give the district its particular softness and scent.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">Dense</span><span class="district-card__stat-label">Planting</span></div>
+            <div><span class="district-card__stat-value">Guided</span><span class="district-card__stat-label">Walks</span></div>
+            <div><span class="district-card__stat-value">Rerouted</span><span class="district-card__stat-label">Seasonally</span></div>
+          </div>
+        </article>
+
+        <article class="district-card">
+          <p class="eyebrow">District Seven</p>
+          <h3 class="district-card__title">The High District</h3>
+          <p class="district-card__copy">An elevated district of long views, ceremonial rooms, and some of the city's most luminous architecture. It feels slightly removed, but never separate.</p>
+          <div class="district-card__stats">
+            <div><span class="district-card__stat-value">Highest</span><span class="district-card__stat-label">Elevation</span></div>
+            <div><span class="district-card__stat-value">Wide</span><span class="district-card__stat-label">Views</span></div>
+            <div><span class="district-card__stat-value">Ceremonial</span><span class="district-card__stat-label">Use</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page section" aria-label="Civic Heart">
+      <article class="story-card story-card--feature story-card--feature-reverse story-card--compact">
+        <div class="story-card__body">
+          <p class="kicker">The Civic Heart</p>
+          <h2 class="card-title">The Civic Heart</h2>
+          <p class="card-copy">Central halls, the great commons, evening music, archival readings, and the main inter-district transit hub. Most residents pass through daily.</p>
+          <p class="card-copy">Performances, presentations, and community gatherings are concentrated here in the evenings. The Assembly Hall and Open Air Stage both have open entry.</p>
+        </div>
+        <div class="story-card__media story-card__media--civic-heart">
+          <img src="images/cosmos_39794363.jpeg" alt="A luminous central hall suited to civic gatherings and shared passage." />
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="info-bar" role="contentinfo" aria-label="Information Network updates">
+    <div class="info-bar__label" aria-hidden="true">
+      <span class="info-bar__label-dot"></span>
+      <span class="info-bar__label-text">Information Network</span>
+    </div>
+    <div class="info-bar__track" aria-hidden="true">
+      <div class="info-bar__scroll">
+        <span class="info-item">District Six greenway walks continue with minor seasonal rerouting.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">River Quarter and Civic Heart remain the busiest pedestrian corridors today.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">All district assemblies are proceeding on their regular schedules this week.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">District Six greenway walks continue with minor seasonal rerouting.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">River Quarter and Civic Heart remain the busiest pedestrian corridors today.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">All district assemblies are proceeding on their regular schedules this week.</span>
+        <span class="info-item__sep">◆</span>
+      </div>
+    </div>
+    <div class="info-bar__clock">
+      <span class="info-bar__clock-text" id="ticker-clock">--:--:--</span>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>

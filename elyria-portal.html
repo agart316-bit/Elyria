@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elyria City Information Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/junicode@5.0.12/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="elyria-portal.html" class="site-header__wordmark" aria-label="Elyria home">
+      <span class="site-header__city">Elyria</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="elyria-portal.html" class="site-nav__item site-nav__item--active">Today</a>
+      <a href="districts.html" class="site-nav__item">Districts</a>
+      <a href="nourishment.html" class="site-nav__item">Nourishment</a>
+      <a href="care.html" class="site-nav__item">Care</a>
+      <a href="events.html" class="site-nav__item">Events</a>
+      <a href="community.html" class="site-nav__item">Community</a>
+    </nav>
+    <div class="site-header__right">
+      <time class="header-clock" id="header-clock" datetime="" aria-live="polite">--:--:--</time>
+      <span class="header-date" id="header-date">--</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero--fullbleed" aria-label="Portal welcome">
+      <div class="hero-fullbleed__grid" aria-hidden="true">
+        <div class="hero-fullbleed__panel" data-panel="0">
+          <div class="hero-fullbleed__slide is-active" data-slide="0">
+            <img class="hero-fullbleed__img" src="images/0570a9638c8cd5c01ffe029d8b4a7bf7.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="1">
+            <img class="hero-fullbleed__img" src="images/20260414_1816_Image Generation_remix_01kp711k2yebdvqzxe00gyxjbf.png" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="2">
+            <img class="hero-fullbleed__img" src="images/256533a4a86d8028a73954aa1eac117d.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="3">
+            <img class="hero-fullbleed__img" src="images/3e0a4d37812d5aecc76132c2892888e4.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="4">
+            <img class="hero-fullbleed__img" src="images/59a87552949eb86d36005f8c3021749f.jpg" alt="" />
+          </div>
+        </div>
+        <div class="hero-fullbleed__panel" data-panel="1">
+          <div class="hero-fullbleed__slide is-active" data-slide="0">
+            <img class="hero-fullbleed__img" src="images/6338bdc5afe0a9f0e53ce628ab38106d.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="1">
+            <img class="hero-fullbleed__img" src="images/6ae21a31-ede0-463e-a298-5dee28aecc26.avif" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="2">
+            <img class="hero-fullbleed__img" src="images/988b75a32f9ecb30324ae787c98c5cd9.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="3">
+            <img class="hero-fullbleed__img" src="images/b9961a2d096a39f9cd176f485f9864e0.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="4">
+            <img class="hero-fullbleed__img" src="images/ef26e740d83f07781554a268a6aafeda.jpg" alt="" />
+          </div>
+        </div>
+        <div class="hero-fullbleed__panel" data-panel="2">
+          <div class="hero-fullbleed__slide is-active" data-slide="0">
+            <img class="hero-fullbleed__img" src="images/f0d98ae222c7ab8a07299256bbe11383.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="1">
+            <img class="hero-fullbleed__img" src="images/task_01kp1hktgmf0ss31fpcjja6mgf-1776021041_img_1.webp" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="2">
+            <img class="hero-fullbleed__img" src="images/1c91abc5dc73bbf4441292ebbe6183c5.jpg" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="3">
+            <img class="hero-fullbleed__img" src="images/1cbbe30f-3569-4dd2-9a25-83f9b175ca71.webp" alt="" />
+          </div>
+          <div class="hero-fullbleed__slide" data-slide="4">
+            <img class="hero-fullbleed__img" src="images/2abed0910f0053555ac811fddcb874f8.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-fullbleed__overlay">
+        <h1 class="hero-fullbleed__title" id="hero-greeting">Good morning,<br />Elyria.</h1>
+      </div>
+    </section>
+
+    <section class="page" aria-label="Today at a glance">
+      <div class="system-strip">
+        <div class="system-strip__grid">
+          <div class="system-strip__item">
+            <span class="system-strip__label">Conditions</span>
+            <span class="system-strip__value">29°C, warm and clear with gentle wind through the upper gardens.</span>
+          </div>
+          <div class="system-strip__item">
+            <span class="system-strip__label">Civic status</span>
+            <span class="system-strip__value">All centers open. Greenway movement remains easy in every district.</span>
+          </div>
+          <div class="system-strip__item">
+            <span class="system-strip__label">Kitchen rhythm</span>
+            <span class="system-strip__value">Morning grain service has begun. Root broth replenishment at midday.</span>
+          </div>
+          <div class="system-strip__item">
+            <span class="system-strip__label">This evening</span>
+            <span class="system-strip__value">Music gathers in the Civic Heart after sunset.</span>
+          </div>
+        </div>
+      </div>
+
+      <article class="story-card story-card--feature story-card--home-feature">
+        <div class="story-card__body">
+          <p class="kicker kicker--green">Featured this week</p>
+          <h2 class="card-title">About this portal</h2>
+          <p class="card-copy">The City Information Portal is Elyria's public-facing information system. Use it for district news, care center status, nourishment schedules, upcoming events, and community notices.</p>
+          <p class="card-copy">Information is updated daily. For urgent matters, contact your district's civic building directly.</p>
+          <div class="card-actions">
+            <a href="districts.html" class="button-link">Read the districts</a>
+            <a href="care.html" class="button-link">View care network</a>
+          </div>
+        </div>
+        <div class="story-card__media story-card__media--portal-feature">
+          <img src="images/cosmos_581756106.jpeg" alt="A sunlit civic promenade with planted terraces and open walkways." />
+        </div>
+      </article>
+    </section>
+
+    <section class="page" aria-label="City statistics and sections">
+      <div class="home-stat-band">
+        <div class="home-stat-band__media" aria-hidden="true">
+          <img src="images/6338bdc5afe0a9f0e53ce628ab38106d.jpg" alt="" />
+        </div>
+        <div class="home-stat-band__overlay">
+          <div class="home-stat-band__content page">
+            <div class="stat-panel">
+              <div class="stat-hero">
+                <span class="stat-hero__label">Resident count</span>
+                <span class="stat-hero__value">412,805</span>
+                <p class="stat-hero__copy">Elyria's infrastructure covers housing, nourishment, care, learning, and transit for all residents. Nothing here requires individual negotiation.</p>
+              </div>
+              <div class="stat-stack">
+                <div class="soft-panel soft-panel--green">
+                  <span class="stat-item__label">Green energy coverage</span>
+                  <span class="stat-item__value">98.4%</span>
+                </div>
+                <div class="soft-panel">
+                  <span class="stat-item__label">Average transit wait</span>
+                  <span class="stat-item__value">7 min</span>
+                </div>
+                <div class="soft-panel soft-panel--pink">
+                  <span class="stat-item__label">Care network readiness</span>
+                  <span class="stat-item__value">Full</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">What's in the portal</h2>
+        </div>
+      </div>
+
+      <div class="editorial-grid editorial-grid--portal">
+        <article class="editorial-card">
+          <div class="editorial-card__media">
+            <img src="images/cosmos_165848302.jpeg" alt="Layered district structures surrounded by planting and water." />
+          </div>
+          <p class="eyebrow">Districts</p>
+          <h3 class="editorial-card__title">Districts</h3>
+          <p class="editorial-card__copy">Seven districts radiate from the Civic Heart, each with its own gathering places and character. Maps, civic building locations, and district-specific notices are all here.</p>
+          <a href="districts.html" class="button-link">Read the map</a>
+        </article>
+
+        <article class="editorial-card">
+          <div class="editorial-card__media">
+            <img src="images/cosmos_1506459162.jpeg" alt="A warm communal interior suited to shared meals and daily nourishment." />
+          </div>
+          <p class="eyebrow">Nourishment</p>
+          <h3 class="editorial-card__title">Nourishment</h3>
+          <p class="editorial-card__copy">Community Kitchen rhythms, daily nourishment principles, and the weekly meal cycle across the city. Warm food remains available at every hour.</p>
+          <a href="nourishment.html" class="button-link">Open nourishment</a>
+        </article>
+
+        <article class="editorial-card">
+          <div class="editorial-card__media">
+            <img src="images/cosmos_1764152140.jpeg" alt="A bright restorative interior with white arches and calm water." />
+          </div>
+          <p class="eyebrow">Care</p>
+          <h3 class="editorial-card__title">Care</h3>
+          <p class="editorial-card__copy">Six centers across the city, open at all hours. No appointment needed, no cost to residents. Find your nearest center and current wait status here.</p>
+          <a href="care.html" class="button-link">Open care</a>
+        </article>
+
+        <article class="editorial-card">
+          <div class="editorial-card__media">
+            <img src="images/cosmos_2034656126.jpeg" alt="A civic gathering room prepared for performance and public events." />
+          </div>
+          <p class="eyebrow">Events</p>
+          <h3 class="editorial-card__title">Events</h3>
+          <p class="editorial-card__copy">The full city calendar, current highlighted date, and events distributed throughout the year. Music, assemblies, workshops, and civic gatherings are all listed here.</p>
+          <a href="events.html" class="button-link">See events</a>
+        </article>
+
+        <article class="editorial-card">
+          <div class="editorial-card__media">
+            <img src="images/1cbbe30f-3569-4dd2-9a25-83f9b175ca71.webp" alt="A compact civic image that suits public notices, updates, and shared communication." />
+          </div>
+          <p class="eyebrow">Community</p>
+          <h3 class="editorial-card__title">Community Updates</h3>
+          <p class="editorial-card__copy">Public updates, noted variations, and current civic notices presented one card at a time. The latest communications gather observations from across Elyria with calm clarity.</p>
+          <a href="community.html" class="button-link">Enter community</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="city-map-band" aria-label="City map placeholder">
+      <img src="images/cosmos_510184085.jpeg" alt="A broad landscape view suggesting Elyria's connected districts and routes." />
+    </section>
+  </main>
+
+  <footer class="info-bar" role="contentinfo" aria-label="Information Network updates">
+    <div class="info-bar__label" aria-hidden="true">
+      <span class="info-bar__label-dot"></span>
+      <span class="info-bar__label-text">Information Network</span>
+    </div>
+    <div class="info-bar__track" aria-hidden="true">
+      <div class="info-bar__scroll">
+        <span class="info-item">All care centers operating at full capacity and walk-ins remain welcome.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Transit network running on standard schedule across all seven districts.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Autumn Harvest Table preparations underway in District Three.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Greenway corridors open, with gentle rerouting in seasonal growth areas only.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">All care centers operating at full capacity and walk-ins remain welcome.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Transit network running on standard schedule across all seven districts.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Autumn Harvest Table preparations underway in District Three.</span>
+        <span class="info-item__sep">◆</span>
+        <span class="info-item">Greenway corridors open, with gentle rerouting in seasonal growth areas only.</span>
+        <span class="info-item__sep">◆</span>
+      </div>
+    </div>
+    <div class="info-bar__clock">
+      <span class="info-bar__clock-text" id="ticker-clock">--:--:--</span>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>

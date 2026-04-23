@@ -220,33 +220,10 @@
   Array.prototype.forEach.call(document.querySelectorAll("[data-community-pagination]"), function (root) {
     var cards = root.querySelectorAll("[data-community-card]");
     var buttons = root.querySelectorAll("[data-community-page-button]");
-    var pagination = root.querySelector(".community-updates-card__pagination");
-    var prevButton;
-    var nextButton;
     var activeIndex = 0;
 
     if (!cards.length || cards.length !== buttons.length) {
       return;
-    }
-
-    if (pagination) {
-      prevButton = document.createElement("button");
-      nextButton = document.createElement("button");
-
-      prevButton.type = "button";
-      prevButton.className = "community-updates-card__nav";
-      prevButton.textContent = "←";
-      prevButton.setAttribute("aria-label", "Show previous community update");
-      prevButton.setAttribute("data-community-nav", "prev");
-
-      nextButton.type = "button";
-      nextButton.className = "community-updates-card__nav";
-      nextButton.textContent = "→";
-      nextButton.setAttribute("aria-label", "Show next community update");
-      nextButton.setAttribute("data-community-nav", "next");
-
-      pagination.insertBefore(prevButton, pagination.firstChild);
-      pagination.appendChild(nextButton);
     }
 
     function setCommunityPage(index) {
@@ -267,13 +244,7 @@
     }
 
     root.addEventListener("click", function (event) {
-      var navButton = event.target.closest("[data-community-nav]");
       var button = event.target.closest("[data-community-page-button]");
-
-      if (navButton) {
-        setCommunityPage(activeIndex + (navButton.getAttribute("data-community-nav") === "next" ? 1 : -1));
-        return;
-      }
 
       if (!button) {
         return;
@@ -548,7 +519,7 @@
       var startOffset = firstDay.getDay();
       var dayNumber;
 
-      monthCard.className = "event-month event-month--tone-" + (monthIndex % 4);
+      monthCard.className = "event-month";
       monthHeader.className = "event-month__header";
       monthTitle.className = "event-month__title";
       monthYear.className = "event-month__year";

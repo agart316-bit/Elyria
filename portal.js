@@ -244,7 +244,13 @@
     }
 
     root.addEventListener("click", function (event) {
+      var navButton = event.target.closest("[data-community-action]");
       var button = event.target.closest("[data-community-page-button]");
+
+      if (navButton) {
+        setCommunityPage(activeIndex + (navButton.getAttribute("data-community-action") === "next" ? 1 : -1));
+        return;
+      }
 
       if (!button) {
         return;
@@ -599,6 +605,7 @@
 
     function renderMonth(monthIndex) {
       activeMonthIndex = (monthIndex + 12) % 12;
+      stage.className = "year-calendar__stage year-calendar__stage--tone-" + (activeMonthIndex % 4);
 
       if (calendarImage) {
         calendarImage.src = calendarImages[activeMonthIndex];

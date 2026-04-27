@@ -62,7 +62,7 @@
   --type-control: clamp(1.3rem, 1.8vw, 1.7rem);
   --type-icon: 1.1rem;
   --type-date: 2rem;
-  --hero-panel-height: clamp(17rem, 27vw, 20rem);
+  --hero-panel-height: clamp(24rem, 40vw, 32rem);
   --text-xs: 0.72rem;
   --text-sm: 0.86rem;
   --text-base: 1rem;
@@ -142,7 +142,7 @@ body {
   font-size: var(--type-body);
   line-height: var(--leading-body);
   padding-top: var(--header-height);
-  padding-bottom: 0;
+  padding-bottom: var(--space-20);
   overflow-x: hidden;
 }
 
@@ -157,6 +157,11 @@ main > section + section {
 
 main > section.home-sections {
   margin-top: 0;
+}
+
+main > section + section.section,
+main > section.section + section {
+  margin-top: var(--space-section);
 }
 
 h1,
@@ -291,9 +296,6 @@ select {
   padding: 0 clamp(1.4rem, 3vw, 3.6rem);
 }
 
-.page + .page {
-  margin-top: 0;
-}
 
 .page-hero {
   padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.6rem, 5vw, 4.5rem);
@@ -303,7 +305,7 @@ select {
 .page-hero--fullbleed {
   position: relative;
   width: 100%;
-  height: calc(100vh - var(--header-height));
+  height: 85vh;
   overflow: hidden;
   margin: 0;
   background:
@@ -535,14 +537,14 @@ select {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-bottom: 0.45rem;
-  color: var(--color-white);
+  color: var(--color-ink);
 }
 
 .hero-note p {
   margin: 0;
   font-size: var(--text-sm);
   line-height: var(--leading-copy);
-  color: var(--color-white);
+  color: var(--color-ink);
 }
 
 .hero-note--light {
@@ -552,7 +554,7 @@ select {
 
 .hero-note--light strong,
 .hero-note--light p {
-  color: var(--color-white);
+  color: var(--color-ink);
 }
 
 .system-strip {
@@ -678,6 +680,23 @@ select {
 
 .story-card--feature-reverse .story-card__media {
   order: -1;
+}
+
+.story-card--events-feature {
+  align-items: flex-start;
+}
+
+.story-card--events-feature .story-card__body {
+  justify-content: flex-start;
+  padding: var(--space-3);
+}
+
+.story-card--events-feature .story-card__body > .card-copy + .card-copy {
+  margin-top: var(--space-component);
+}
+
+.story-card--events-feature .story-card__media {
+  min-height: 0;
 }
 
 .story-card__media {
@@ -1895,7 +1914,7 @@ h3.card-title {
   position: relative;
   padding: 0.95rem;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(var(--calendar-tone-rgb), 0.12)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.12)),
     var(--panel-bg, var(--glass-bg));
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
@@ -1938,7 +1957,7 @@ h3.card-title {
   gap: 1px;
   margin-bottom: 1px;
   padding: 1px;
-  background: rgba(var(--calendar-tone-rgb), 0.14);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .event-month__weekday {
@@ -1946,7 +1965,7 @@ h3.card-title {
   font-size: var(--type-label-sm);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(36, 29, 24, 0.66);
+  color: var(--color-ink);
   text-align: center;
   padding: 0.55rem 0.25rem;
   background: rgba(255, 255, 255, 0.3);
@@ -1955,7 +1974,7 @@ h3.card-title {
 .event-month__days {
   gap: 1px;
   padding: 1px;
-  background: rgba(var(--calendar-tone-rgb), 0.14);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .event-month__blank,
@@ -1977,7 +1996,7 @@ h3.card-title {
 }
 
 .event-month__day--has-events {
-  background: rgba(var(--calendar-tone-rgb), 0.16);
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .event-month__day--today {
@@ -1988,7 +2007,7 @@ h3.card-title {
   font-family: var(--font-mono);
   font-size: var(--type-label-xl);
   letter-spacing: 0.08em;
-  color: var(--color-ink-soft);
+  color: var(--color-ink);
 }
 
 .event-chip-list {
@@ -2005,7 +2024,7 @@ h3.card-title {
   padding: 0.38rem 0.42rem;
   border: 1px solid rgba(var(--calendar-tone-rgb), 0.34);
   background: rgba(var(--calendar-tone-rgb), 0.24);
-  color: var(--calendar-tone-strong);
+  color: var(--color-ink);
   font-family: var(--font-mono);
   font-size: var(--type-label-xs);
   letter-spacing: 0.08em;
@@ -2027,7 +2046,7 @@ h3.card-title {
 .event-chip.is-past {
   background: rgba(110, 110, 110, 0.16);
   border-color: rgba(110, 110, 110, 0.14);
-  color: rgba(36, 29, 24, 0.46);
+  color: var(--color-ink);
 }
 
 .event-chip.is-past:hover,
@@ -2035,7 +2054,7 @@ h3.card-title {
 .event-chip.is-past.is-active {
   background: rgba(110, 110, 110, 0.34);
   border-color: rgba(110, 110, 110, 0.28);
-  color: rgba(36, 29, 24, 0.82);
+  color: var(--color-ink);
 }
 
 .event-popover {
